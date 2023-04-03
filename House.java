@@ -1,6 +1,6 @@
 import java.util.ArrayList; // import array list for java
 
-/*
+/**
  * this class is representing a house
  * houses contain dining rooms and certain residents
  */
@@ -10,15 +10,18 @@ public class House extends Building { // Library class extends the Building clas
   private boolean hasDiningRoom; //boolean for true/false if house has a dining room 
   private Boolean hasElevator; //boolean for if house has an elevator
 
-  /*
-  * Overloaded constructor with address only 
+  /**
+   * * Overloaded constructor with address only 
+   * Overload definition: define multiple “versions” of the same method to accommodate different type / number of parameters
+   * @param address
   */
   public House(String address) {
     super(address);
   }
 
-    /** constructor for the House class
-    * @param String name = building name, String address = building address, int nFloors = number of floors of house, boolean hasDiningRoom = true/false if house has a dining room
+    /** 
+     * constructor for the House class
+     * @param String name = building name, String address = building address, int nFloors = number of floors of house, boolean hasDiningRoom = true/false if house has a dining room
     */
     public House(String name, String address, int nFloors, boolean hasDiningRoom, boolean hasElevator) {
       super(name, address, nFloors);
@@ -39,7 +42,8 @@ public class House extends Building { // Library class extends the Building clas
       }
 
 
-     /** accessor for dining room status which is either true or false
+     /**
+      * accessor for dining room status which is either true or false
       * @return boolean = whether or not the House has a dining room
       */
     public boolean hasDiningRoom(){

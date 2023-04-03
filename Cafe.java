@@ -28,7 +28,7 @@ public class Cafe extends Building {
     }
 
 
-    /** overloaded constructor for a Cafe 
+    /** overloaded constructor for a Cafe, if address if known but nothing else (such as a manager or someone in control of the cafe)
      * @param name
      * @param nCoffeeOunces
      * @param nSugarPackets

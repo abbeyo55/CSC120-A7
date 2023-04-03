@@ -8,7 +8,10 @@ public class Library extends Building { // Library class extends from the origin
   private Hashtable<String, Boolean> collection; // Hashtable to keep track of books and availability status of all the books within the library 
   private Boolean hasElevator;
 
-    /* Overloaded constructor with address only */
+    /**
+     * Overloaded constructor with address only 
+     * @param address 
+    */
     public Library(String address) {
         super(address);
     }
