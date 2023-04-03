@@ -33,7 +33,9 @@ public class House extends Building { // Library class extends the Building clas
     }
   
     /** 
-     *  Shows options available for house class with residents with proper numbers accosiated with all aspects of house
+     * shows options available for house class with residents with proper numbers accosiated with all aspects of house
+     * adds to building class while adding in all components for residents and dining rooms 
+     * doesn't include the overload of what spot a resident is removed from since name never printted, just person removed
      */
     public void showOptions() {
         super.showOptions();
@@ -79,9 +81,10 @@ public class House extends Building { // Library class extends the Building clas
       return name;
     } 
 
-    /** return the location in the array that the person was removed from
-   * @param spot the place to be removed
-   * @return int the spot in the actual array
+    /** 
+     * return the location in the array that the person was removed from 
+     * @param spot the place to be removed
+     * @return int the spot in the actual array
    */
     public int moveOut(int spot){
       residents.remove(spot);
@@ -129,12 +132,13 @@ public class House extends Building { // Library class extends the Building clas
       jordan.moveIn("Mia");
       jordan.moveIn("Phoebe");
       jordan.moveIn("Lizzie");
+      jordan.moveOut(2); //should be Mia
       jordan.moveOut("Mia");
       jordan.moveOut("Elli"); //doesn't produce anything, not in house
       System.out.println(jordan);
       // jordan.moveOut("Abbey");
       jordan.isResident("Abbey");
-      System.out.println(jordan + " in which the current residents are " + jordan.residents);
+      System.out.println(jordan + " in which the current residents are " + jordan.residents); //only Abbey and Lizzie with how print functioned
       jordan.enter();
       jordan.goToFloor(2);
       jordan.showOptions();

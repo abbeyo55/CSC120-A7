@@ -46,6 +46,9 @@ public class Cafe extends Building {
 
     /** 
      *  Shows options available for cafe class
+     * adds in the sell coffee, all other aspects of class covered in the buildings
+     * don't need to write the restock since that is private and not shown to the public 
+     * doesn't need to include overload of size differences of small, medium and large as they also go through sellCoffee
      */
     public void showOptions() {
         super.showOptions();

@@ -27,6 +27,7 @@ public class Library extends Building { // Library class extends from the origin
 
   /** 
      *  Shows options available for library class
+     * adds in all components of books with titles along with what's included in the building class
      */
     public void showOptions() {
         super.showOptions();
