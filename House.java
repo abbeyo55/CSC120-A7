@@ -11,12 +11,14 @@ public class House extends Building { // Library class extends the Building clas
   private Boolean hasElevator; //boolean for if house has an elevator
 
   /**
-   * * Overloaded constructor with address only 
+   * * Overloaded constructor with address and list of residents only 
    * Overload definition: define multiple “versions” of the same method to accommodate different type / number of parameters
    * @param address
+   * @param residents
   */
   public House(String address) {
     super(address);
+    this.residents = new ArrayList<String>();
   }
 
     /** 
@@ -75,6 +77,15 @@ public class House extends Building { // Library class extends the Building clas
     public String moveOut(String name){ // returns the name of the person who moved out
       residents.remove(name);
       return name;
+    } 
+
+    /** return the location in the array that the person was removed from
+   * @param spot the place to be removed
+   * @return int the spot in the actual array
+   */
+    public int moveOut(int spot){
+      residents.remove(spot);
+      return spot;
     } 
   
     /** checks if a specific name is in list residents

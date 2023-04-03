@@ -85,6 +85,26 @@ public class Cafe extends Building {
         }
     }
 
+    /** Overloaded method for selling coffee to imput a size name rather than ounce amount
+     * @param size
+     * @param packetsUsed
+     * @param creamsUsed
+     */
+    public void sellCoffee(String size, int packetsUsed, int creamsUsed){
+        if (size.equals("small")){
+            this.nCoffeeOunces = nCoffeeOunces - 10;
+        }
+        if (size.equals("medium")){
+            this.nCoffeeOunces = nCoffeeOunces - 14;
+        }
+        if (size.equals("large")){
+            this.nCoffeeOunces = nCoffeeOunces - 18;
+        }
+        this.nCups = nCups - 1;
+        this.nSugarPackets = nSugarPackets - packetsUsed;
+        this.nCreams = nCreams - creamsUsed;
+    }
+
     /**
      * Restocks the cafe inventory by adding the given amounts specified above (which is equal to 100)
      * @param nCoffeeOunces int ounces of coffee to restock 

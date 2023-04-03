@@ -1,4 +1,9 @@
 Use this file to record your reflection on this assignment.
 
 - Which methods did you decide to `overload`, and why?
+
+I decided to overload the constructors in every subclass, of House, Library and Cafe. In the House class I only kept the overload constructor with the address. In all 3 classes it is now possible to use any of them without knowing the address or number of floors in that specific building. The sellCoffee() funtion now can take other sizes instead of exact ounces - which would mean it can now take "tall", "grande" and "venti" (such as an order at starbucks). In the house funtion is now possible to remove someone from a specific house without their name being known, only their specific spot in the array list. I related all of these to how I might think about them in the real world, such as ordering a cup of coffee in terms of it's size not specific ounces and how most people move in and out of houses based off their room number and not their specific name when shared with the rest of the house community. 
+
+
 - What worked, what didn't, what advice would you give someone taking this course in the future?
+Looking back over what I had completed in assignment 6, and then only then adding things was helpful. There wasn't much of a trajectory to this assignment as a lot of it was up to what you wanted to include and what you didn't - which made it a little more difficult than last assignments. However, this assignment was fun once I got into the role of what I was doing - especially with the constructors. I would say to be patient and give it time because most likely you will be able to solve the problems within your code if you step away from it for a minute - just like Jordan always says! 
