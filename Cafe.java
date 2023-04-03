@@ -49,7 +49,7 @@ public class Cafe extends Building {
      */
     public void showOptions() {
         super.showOptions();
-        System.out.println("Available options at " + this.name + ":\n + enter() \n + exit()\n + sellCoffee(size, SugarPackets, Creams)\n + restock (CoffeeOunces, SugarPackets, Creams, Cups)");
+        System.out.println(" + sellCoffee(size, SugarPackets, Creams)\n");
 
     }
 
@@ -80,7 +80,7 @@ public class Cafe extends Building {
             this.restock(0, 0, 100, 0); //placeholders run in order of coffee ounces, sugar packets, creams and then cups 
         }
         if (this.nCups <= 0) { 
-            System.out.println("The cafe has run out of cups, restock 100 more");
+            System.out.println("The cafe has run out of cups, restock 100 more\n");
             this.restock(0, 0, 0, 100); //placeholders run in order of coffee ounces, sugar packets, creams and then cups 
         }
     }
@@ -97,7 +97,7 @@ public class Cafe extends Building {
         if (size.equals("medium")){
             this.nCoffeeOunces = nCoffeeOunces - 14;
         }
-        if (size.equals("large")){
+        if (size.equals("large\n")){
             this.nCoffeeOunces = nCoffeeOunces - 18;
         }
         this.nCups = nCups - 1;
@@ -151,7 +151,7 @@ public class Cafe extends Building {
         Cafe compassCafe = new Cafe("Compass Cafe", "7 Neilson Drive, Northampton MA", 5, 10, 100, 100, 0);
         
         //Testing sell and auto restock
-        campusCafe.sellCoffee(50, 50, 50);
+        campusCafe.sellCoffee("small", 50, 50);
         System.out.println("Cups in Campus Cafe: " + campusCafe.nCups);
         System.out.println("Coffee in Campus Cafe: " + campusCafe.nCoffeeOunces);
         System.out.println("Sugar packets in Campus Cafe:" + campusCafe.nSugarPackets);

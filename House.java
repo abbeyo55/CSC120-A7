@@ -37,7 +37,7 @@ public class House extends Building { // Library class extends the Building clas
      */
     public void showOptions() {
         super.showOptions();
-        System.out.print("Available options at " + this.name + ":\n + enter() \n + exit() \n + goUp() \n + goDown()\n + getnResidents() \n + moveIn(name) \n + moveOut(name) \n + getHasDiningRoom \n + isResident(name) \n + getnResidents() \n");
+        System.out.print(" + getnResidents() \n + moveIn(name) \n + moveOut(name) \n + getHasDiningRoom \n + isResident(name) \n + getnResidents() \n");
         if (this.hasElevator == true) {
             System.out.println(" + goToFloor(n)");
         }
