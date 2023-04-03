@@ -1,5 +1,3 @@
-import javax.management.RuntimeErrorException;
-
 public class Building {
 
     protected String name;
@@ -95,6 +93,7 @@ public class Building {
         return this.name + " is a " + this.nFloors + "-story building located at " + this.address + ".";
     }
 
+    //edited to experiment to ensure all classes ran properly
     public static void main(String[] args) {
         System.out.println("------------------------------------");
         System.out.println("Test of Building constructor/methods");
@@ -103,6 +102,15 @@ public class Building {
         Building fordHall = new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4);
         System.out.println(fordHall);
         fordHall.showOptions();
+        Cafe campusCafe = new Cafe("Campus Cafe", "100 Elm Street, Northampton MA", 3, 128, 20, 30, 10);
+        System.out.println(campusCafe);
+        campusCafe.showOptions();
+        Library neilsonLibrary = new Library("Neilson Library", "7 Neilson Drive, Northampton MA", 5, true);
+        System.out.println(neilsonLibrary);
+        neilsonLibrary.showOptions();
+        House jordan = new House("Jordan House", "1 Mandelle Road, Northampton MA", 4, true, true);
+        System.out.println(jordan);
+        jordan.showOptions();
 
         System.out.println("-----------------------------------");
         System.out.println("Demonstrating enter/exit/navigation");

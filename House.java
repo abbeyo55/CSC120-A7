@@ -126,7 +126,7 @@ public class House extends Building { // Library class extends the Building clas
       }
   
     public static void main(String[] args) {
-      House jordan = new House("Jordan House", "1 Mandelle Road", 4, true, true);
+      House jordan = new House("Jordan House, Northampton MA", "1 Mandelle Road", 4, true, true);
       //System.out.println(jordan);
       jordan.moveIn("Abbey");
       jordan.moveIn("Mia");

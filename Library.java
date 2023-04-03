@@ -17,11 +17,19 @@ public class Library extends Building { // Library class extends from the origin
     this.collection = new Hashtable<String,Boolean>();
   }
 
+    /**
+     * doesn't include system.out.println because it prints weird in building class
+     * public class for all components of library class, an extension of the building class
+     * @param name
+     * @param address
+     * @param nFloors
+     * @param hasElevator
+     */
   public Library(String name, String address, int nFloors, boolean hasElevator) {
     super(name, address, nFloors); 
     this.collection = new Hashtable<String, Boolean>(); //initialize specific books to a new Hashtable
     this.hasElevator = hasElevator;
-    System.out.println("You have built a library: 📖");
+    //System.out.println("You have built a library: 📖");
 
   }
 
@@ -31,7 +39,7 @@ public class Library extends Building { // Library class extends from the origin
      */
     public void showOptions() {
         super.showOptions();
-        System.out.println("\n + addTitle() \n + removeTitle() \n + checkOut() \n + checkIn() \n + containsTitle() \n + isAvailable()");
+        System.out.println(" + addTitle() \n + removeTitle() \n + checkOut() \n + checkIn() \n + containsTitle() \n + isAvailable()");
       }
 
   // methods to update the `Hashtable` containing the `collection` every time we add/remove a title:
@@ -133,7 +141,7 @@ public class Library extends Building { // Library class extends from the origin
       }
   
   public static void main(String[] args) {
-    Library neilsonLibrary = new Library("Neilson Library", "7 Neilson Drive, Northampton", 5, true);
+    Library neilsonLibrary = new Library("Neilson Library", "7 Neilson Drive, Northampton MA", 5, true);
     neilsonLibrary.addTitle("One Fish, Two Fish, Red Fish, Blue Fish");
     neilsonLibrary.addTitle("The Cat in the Hat");
     neilsonLibrary.addTitle("Oh, the Places You'll Go!");

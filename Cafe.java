@@ -17,6 +17,7 @@ public class Cafe extends Building {
      * @param nSugarPackets int number of sugar packets remaining in the inventory 
      * @param nCreams int number of creams remaining in the inventory 
      * @param nCups int number of coffee cups remaining in the inventory 
+     * removed the system.out.println because doesn't look as good in the buildings.java print out
      */
     public Cafe(String name, String address, int nFloors, int nCoffeeOunces, int nSugarPackets, int nCreams, int nCups) {
         super(name, address, nFloors);
@@ -24,7 +25,7 @@ public class Cafe extends Building {
         this.nSugarPackets = nSugarPackets; //sugar packets
         this.nCreams = nCreams; //creamers
         this.nCups = nCups; //cups 
-        System.out.println("You have built a cafe");
+        //System.out.println("You have built a cafe"); 
     }
 
 
@@ -52,7 +53,7 @@ public class Cafe extends Building {
      */
     public void showOptions() {
         super.showOptions();
-        System.out.println(" + sellCoffee(size, SugarPackets, Creams)\n");
+        System.out.println(" + sellCoffee(size, SugarPackets, Creams)");
 
     }
 
@@ -83,7 +84,7 @@ public class Cafe extends Building {
             this.restock(0, 0, 100, 0); //placeholders run in order of coffee ounces, sugar packets, creams and then cups 
         }
         if (this.nCups <= 0) { 
-            System.out.println("The cafe has run out of cups, restock 100 more\n");
+            System.out.println("The cafe has run out of cups, restock 100 more");
             this.restock(0, 0, 0, 100); //placeholders run in order of coffee ounces, sugar packets, creams and then cups 
         }
     }
