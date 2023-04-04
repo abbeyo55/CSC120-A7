@@ -116,7 +116,6 @@ public class House extends Building { // Library class extends the Building clas
     /**
      * Moves user to a new selected floor or lets them climb up or down if there is no elevator
      * @param floorNum number of the floor user wants to go to
-     * @param hasElevator if house has elevator or not 
      */
     public void goToFloor(int floorNum) {
         if (this.hasElevator == false) {
