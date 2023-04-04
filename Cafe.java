@@ -57,7 +57,6 @@ public class Cafe extends Building {
 
     }
 
-
     /**
      * Sells a cup of coffee from cafe and subtracts the given amounts of cups as well as ingredients used from the inventory
      * It then restocks inventory items that run out (if equaling zero, which links to the restock method)
@@ -122,10 +121,10 @@ public class Cafe extends Building {
         this.nCreams += nCreams;
         this.nCups += nCups;
     }
-
-
     
-    /* Navigation methods */
+    /** 
+     * Navigation methods of enter and exit below 
+    */
     public Cafe enter() {
         super.enter();
         return this;
@@ -133,7 +132,7 @@ public class Cafe extends Building {
 
     public Cafe exit() {
         super.exit();
-        return null; // We're outside now, so the building is null
+        return null; // We're outside now, so the building is null - nothing will work 
     }
 
     /**

@@ -23,6 +23,12 @@ public class House extends Building { // Library class extends the Building clas
 
     /** 
      * constructor for the House class
+     * @param name String name of the specifici cafe being addressed 
+     * @param address String street address of the cafe
+     * @param nFloors int equal to the number of floors in the cafe 
+     * @param hasDiningRoom whether has dining room or not for house
+     * @param hasElevator whether has elevator or not for house
+     * @param residents shows residents in the house at time asked
      * @param String name = building name, String address = building address, int nFloors = number of floors of house, boolean hasDiningRoom = true/false if house has a dining room
     */
     public House(String name, String address, int nFloors, boolean hasDiningRoom, boolean hasElevator) {
@@ -110,6 +116,7 @@ public class House extends Building { // Library class extends the Building clas
     /**
      * Moves user to a new selected floor or lets them climb up or down if there is no elevator
      * @param floorNum number of the floor user wants to go to
+     * @param hasElevator if house has elevator or not 
      */
     public void goToFloor(int floorNum) {
         if (this.hasElevator == false) {

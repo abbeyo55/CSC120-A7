@@ -58,7 +58,7 @@ public class Library extends Building { // Library class extends from the origin
    /** 
     *  Removes a specified book from the collection
     *  @param title title of the specified book to be removed
-     *  @return updated collection hashtable without specific book 
+     * @return updated collection hashtable without specific book 
     */
    public String removeTitle(String title){
      collection.remove(title, true);
@@ -125,6 +125,7 @@ public class Library extends Building { // Library class extends from the origin
    /**
      * Moves user to a new selected floor or lets them climb up or down if there is no elevator
      * @param floorNum number of the floor user wants to go to
+     * @param hasElevator if the library has an elevator or not 
      */
     public void goToFloor(int floorNum) {
         if (this.hasElevator == false) {
